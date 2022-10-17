@@ -1,0 +1,232 @@
+/* selects everything */
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fff;
+}
+
+
+/* styles for header */
+header {
+    height: 80px;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header .brand {
+    /* border: 1px solid blue; */
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    letter-spacing: 15px;
+}
+
+header nav {
+    /* border: 1px solid green; */
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+header nav ul li {
+    margin: 0 12px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #636e72;
+    font-size: 18px;
+    transition: all .3s ease;
+}
+
+header nav ul li a:hover {
+    color: #333;
+}
+
+/* Styles for landing area */
+#landingArea {
+    height: 80vh;
+    background: url(../../assets/chef.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#landingArea .overlay {
+    background-color: #00000077;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+#landingArea .content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    /* border: 1px solid red; */
+    height: 250px;
+}
+
+#landingArea .content h1 {
+    color: #fff;
+    font-size: 35px;
+}
+
+#landingArea .content h1 span {
+    font-size: 55px;
+    letter-spacing: 8px;
+}
+
+#landingArea .content p {
+    color: #fff;
+    font-size: 18px;
+    margin: 12px auto 22px auto;
+    width: 60%;
+}
+
+#landingArea .content a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    background: #fdcd1d;
+    border-radius: 20px;
+    padding: 8px 18px;
+    transition: all .3s ease;
+}
+
+#landingArea .content a:hover {
+    background: #caa417;
+}
+
+
+/* Styles for about section */
+#about {
+    margin: 54px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#about .left {
+    width: 40%;
+}
+
+#about .left .left-content {
+}
+
+#about .left .left-content h2 {
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 22px;
+    letter-spacing: 3px;
+    margin: 8px 0;
+    color: #555;
+    opacity: 0.5;
+}
+
+#about .left .left-content h3 {
+    color: #333;
+    font-size: 28px;
+    text-transform: capitalize;
+    margin: 8px 0;
+}
+
+#about .left .left-content p {
+    color: #636e72;
+    text-align: justify;
+    margin-bottom: 6px;
+}
+
+#about .right {}
+
+#about .right .right-image-frame {
+    width: 500px;
+}
+
+#about .right .right-image-frame img {
+    width: 100%;
+    /* border-radius: 12px; */
+    border-top-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+}
+
+
+/* styles for menu */
+#menu {
+    padding: 40px 0;
+    background: #bdc3c7;
+}
+
+#menu .menu-content {
+    width: 60%;
+    margin: 0 auto;
+}
+
+#menu .menu-content .menu-title {
+    margin: 8px 0;
+    text-align: center;
+    font-size: 44px;
+    font-weight: bolder;
+    color: #333;
+}
+
+.menu-wrapper {}
+
+
+/* styles for contact section */
+.contact {
+    margin: 40px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* align-items: center; */
+}
+
+.contact .contact-left {
+    flex: 1;
+    /* border: 1px solid red; */
+}
+
+.contact .contact-left .map {
+    text-align: center;
+}
+
+.contact .contact-right {
+    flex: 1;
+    /* border: 1px solid green; */
+}
+
+.contact .contact-right h4 {
+    
+}
+
+.contact .contact-right a {
+    text-decoration: none;
+    color: #2980b9;
+}
+
+/* styles for footer section */
+footer {
+    background: #ecf0f1;
+    text-align: center;
+    padding-top: 8px;
+}
